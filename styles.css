@@ -2,9 +2,90 @@
 Black: #0D0D0D
 Light Grey: #F2F2F2
 Blue: #7ABFBF
-Light Blue: rgba(122. 191, 191, .5)
+Light Blue: rgba(122, 191, 191, .5)
 Red: #EB5428
 */
+
+/* ---------- General ---------- */
+
+
 html {
     font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    width: 414px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+header, nav {
+    background-color: #F2F2F2;
+}
+main p, dd, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+aside {
+    background-color: #7ABFBF;
+}
+/* ---------- Header ---------- */
+h1 {
+    font-size: 40px;
+}
+
+
+/* ---------- Main ---------- */
+
+
+.svglinks li, .svglinks li a {
+    color: #EB5428;
+    list-style: none;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+h2 {
+    font-size: 30px;
+}
+
+
+/* ---------- Aside ---------- */
+h3 {
+    font-size: 25px;
+}
+
+
+/* ---------- Footer ----------- */
+footer section p {
+    text-align: center;
+    padding: 0;
+    line-height: 1rem;
+}
+footer h2, footer h3 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+footer img {
+    width: 50%;
+}
+
+
+/* ---------- Medium Viewport ---------- */
+
+
+@media screen and (min-width: 788px) {
+
+    
+}
+
+
+/* ---------- Large Viewport ---------- */
+
+
+@media screen and (min-width: 1280px) {
+    
 }
