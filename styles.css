@@ -56,6 +56,58 @@ h3 {
     font-size: 25px;
 }
 
+/* ---------- Nav ---------- */
+nav h2 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+nav {
+    width: inherit;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    background-color: #7ABFBF;
+    margin: 0 auto;
+}
+nav ul {
+    visibility: collapse;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    margin: 0;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+}
+nav li:first-child + li, nav li:last-child, nav input {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    display: inline;
+    margin: 20px auto;
+    width: 10px;
+    padding-left: 20px;
+}
+nav #search {
+    display: flex;
+    margin-left: 18px;
+}
+nav input {
+    border: 3px solid #EB5428;
+    padding: 1px;
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+}
+nav button {
+    background-color: #EB5428;
+    border: 2px solid #EB5428;
+    margin-top: 20px;
+}
 
 /* ---------- Footer ----------- */
 footer section p {
