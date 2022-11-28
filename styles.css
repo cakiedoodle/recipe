@@ -22,7 +22,7 @@ body {
 header, nav {
     background-color: #F2F2F2;
 }
-main p, dd, nav, input {
+main p, dd, dt, input {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -32,28 +32,96 @@ aside {
 /* ---------- Header ---------- */
 h1 {
     font-size: 40px;
+    margin: 0;
 }
-
+header {
+    margin-top: 180px;
+    text-align: center;
+}
 
 /* ---------- Main ---------- */
 
-
-.svglinks li, .svglinks li a {
+main {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+}
+menu {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+.svglinks li  {
     color: #EB5428;
     list-style: none;
+    padding-left: 20px;
+}
+.svglinks li a {
+    color: #EB5428;
     text-decoration: none;
+    width: 10px;
 }
 img {
     width: 100%;
 }
 h2 {
     font-size: 30px;
+    text-align: center;
+    margin: 12px;
+}
+dl {
+    margin: 0;
+    padding-left: 10px;
+}
+dt {
+    font-weight: 700;
+    position: absolute;
+}
+dd {
+   padding-left: 70px;
+}
+.content ol {
+    margin: 0;
+}
+.content li {
+    padding-bottom: 14px;
+    list-style: square;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 
 /* ---------- Aside ---------- */
-h3 {
+
+aside h2 {
+    margin: 0;
+    padding: 10px;
+    
+}
+aside img {
+    position: relative;
+    width: 100px;
+    right: 200px;
+    
+}
+aside section {
+    padding-left: 130px;padding-bottom: 20px;
+}
+aside h3 {
     font-size: 25px;
+    display: inline;
+}
+aside p {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    font-size: 16px;
+}
+aside dt {
+    position: relative;
+    bottom: 10px;
+    padding-left: 0;
+}
+aside dd {
+    margin: 0;
+    padding: 0;
 }
 
 /* ---------- Nav ---------- */
@@ -95,6 +163,7 @@ nav li:first-child + li, nav li:last-child, nav input {
 nav #search {
     display: flex;
     margin-left: 18px;
+    font-family: 'Montserrat', sans-serif;;
 }
 nav input {
     border: 3px solid #EB5428;
@@ -110,10 +179,22 @@ nav button {
 }
 
 /* ---------- Footer ----------- */
+
+footer ul {
+    padding: 0;
+    display: flex;
+}
 footer section p {
     text-align: center;
     padding: 0;
     line-height: 1rem;
+}
+footer li {
+    display: inline;
+}
+footer li a {
+    margin-left: 0;
+    width: 25px;
 }
 footer h2, footer h3 {
     visibility: hidden;
@@ -123,8 +204,14 @@ footer h2, footer h3 {
 }
 footer img {
     width: 50%;
+    margin-bottom: 50px;
 }
-
+footer p {
+    position: relative;
+    display: inline;
+    bottom: 0;
+    
+}
 
 /* ---------- Medium Viewport ---------- */
 
