@@ -54,11 +54,16 @@ menu {
     color: #EB5428;
     list-style: none;
     padding-left: 20px;
+    transition: background-color .5s linear;
 }
-.svglinks li a {
+
+.svglinks li:hover {
+    background-color: #7ABFBF;
+}.svglinks li a {
     color: #EB5428;
     text-decoration: none;
     width: 10px;
+    
 }
 img {
     width: 100%;
