@@ -22,7 +22,7 @@ body {
 header, nav {
     background-color: #F2F2F2;
 }
-main p, dd, dt, input {
+main p, dd, dt, .ingredients li, input {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -47,26 +47,38 @@ main {
 }
 menu {
     margin: 0;
-    padding: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     display: flex;
+    justify-content: space-between;
 }
-.svglinks li  {
-    color: #EB5428;
+.svglinks li {
     list-style: none;
-    padding-left: 20px;
-    transition: background-color .5s linear;
+    display: block;
+    flex-direction: column;
+    align-content: center;
+    padding: 5px;
+    margin-right: 10px;
+    transition: background-color .5s linear, border-radius 1s;
 }
-
 .svglinks li:hover {
     background-color: #7ABFBF;
-}.svglinks li a {
+    border-radius: 5px;
+}
+.svglinks li a {
     color: #EB5428;
     text-decoration: none;
-    width: 10px;
-    
+    display: block;
+    transition: color 1s;
 }
-img {
+.svglinks li a:hover {
+    color: #fff;
+}
+main img {
     width: 100%;
+}
+main p {
+    padding: 0 10px;
 }
 h2 {
     font-size: 30px;
@@ -84,49 +96,71 @@ dt {
 dd {
    padding-left: 70px;
 }
-.content ol {
-    margin: 0;
+.directions {
+    padding: 10px 0;
+    font-size: 16px;
 }
-.content li {
+.directions ol li {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+.ingredients li {
     padding-bottom: 14px;
     list-style: square;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 /* ---------- Aside ---------- */
 
 aside h2 {
     margin: 0;
     padding: 10px;
-    
+}
+aside figure {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-left: 20px 10px;padding-bottom: 10px;
+    transition: background-color 1s linear, border 1s ease;
+}
+aside figure:hover {
+    background-color: #EB5428;
+    border: 4px double black;
 }
 aside img {
-    position: relative;
-    width: 100px;
-    right: 200px;
-    
-}
-aside section {
-    padding-left: 130px;padding-bottom: 20px;
+    grid-row: 1 / 1;
+    width: 100%;    
 }
 aside h3 {
     font-size: 25px;
-    display: inline;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    margin-left: 10px;
+    margin-top: 10px;
 }
-aside p {
+aside figcaption {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 0;
     font-size: 16px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    margin-left: 10px;
+    margin-top: 40px;
 }
 aside dt {
-    position: relative;
-    bottom: 10px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    margin-left: 100px;
+    margin-top: -20px;
+    display: inline;
+}
+aside svg {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    display: inline;
     padding-left: 0;
 }
-aside dd {
+aside dd a {
+    text-decoration: none;
     margin: 0;
-    padding: 0;
 }
 
 /* ---------- Nav ---------- */
@@ -185,21 +219,19 @@ nav button {
 
 /* ---------- Footer ----------- */
 
-footer ul {
+footer {
+    margin-top: -20px;
     padding: 0;
+}
+footer ul {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
     display: flex;
 }
 footer section p {
     text-align: center;
-    padding: 0;
     line-height: 1rem;
-}
-footer li {
-    display: inline;
-}
-footer li a {
-    margin-left: 0;
-    width: 25px;
 }
 footer h2, footer h3 {
     visibility: hidden;
@@ -207,16 +239,15 @@ footer h2, footer h3 {
     height: 0;
     margin: 0;
 }
+.footflex {
+    display: flex;
+    flex-direction: column-reverse;
+}
 footer img {
     width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 50px;justify-content: center;
 }
-footer p {
-    position: relative;
-    display: inline;
-    bottom: 0;
-    
-}
+
 
 /* ---------- Medium Viewport ---------- */
 
